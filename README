@@ -23,6 +23,6 @@ As for the actual actions and usage for the code, it does what the task descript
 
 When you launch the applicaction, the console will look like this:
 
-(https://user-images.githubusercontent.com/54059134/96563991-48902780-12cb-11eb-82d5-8c0a1a872eaf.JPG)
+[!console](https://user-images.githubusercontent.com/54059134/96563991-48902780-12cb-11eb-82d5-8c0a1a872eaf.JPG)
 
 Informing you that the time trigger function is working as it should and also, that there are both API calls available for use.
