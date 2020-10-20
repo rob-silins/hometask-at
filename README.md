@@ -10,10 +10,10 @@ Create a GET API call to fetch a payload from blob for specific log entry.
 
 And also I had to use these tools:
 
-• Azure Function (Cloud/Local)
-• Azure Storage (Cloud /Local storage emulator)
-a. Table
-b. Blob
+Azure Function (Cloud/Local),
+Azure Storage (Cloud /Local storage emulator),
+a) Table,
+b)Blob.
 
 Since I did not want to be associated with an Azure account do to connection strings and such, I made this happen by using <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator"> Azure Storage Emulator</a>.
 
