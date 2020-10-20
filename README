@@ -1,0 +1,28 @@
+This project was a home task from a position I was applying for. 
+
+The requests were as follow:
+
+Every minute, fetch data from https://api.publicapis.org/random?auth=null and store success/failure attempt log in the table and full payload in the blob.
+Create a GET API call to list all logs for specific time period (from/to)
+Create a GET API call to fetch a payload from blob for specific log entry.
+
+And also I had to use these tools:
+
+• Azure Function (Cloud/Local)
+• Azure Storage (Cloud /Local storage emulator)
+a. Table
+b. Blob
+
+Since I did not wan't to be associated with an Azure account do to connection strings and such, I made this happen by using <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator"> Azure Storage Emulator</a>.
+
+Also, just to be sure if my code does actually what it was intended to do, I used <a href="https://azure.microsoft.com/en-us/features/storage-explorer/">Microsoft Azure Storage Explorer</a>.
+
+Also, for the API calls, you can use the browser to check the required data, but I used <a href"https://www.postman.com/"> Postman </a> for it was easier to navigate rather than in a browser.
+
+As for the actual actions and usage for the code, it does what the task description asks of it to do. 
+
+When you launch the applicaction, the console will look like this:
+
+![console](https://user-images.githubusercontent.com/54059134/96563991-48902780-12cb-11eb-82d5-8c0a1a872eaf.JPG)
+
+Informing you that the time trigger function is working as it should and also, that there are both API calls available for use.
