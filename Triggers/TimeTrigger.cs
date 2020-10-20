@@ -22,7 +22,7 @@ namespace Atea
         public async Task RunTimer([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer, ExecutionContext ec)
         {
             var importedData = _connection.DataImport();
-            var success = myTimer.Schedule != null;
+            var success = importedData != null;
             await _blobs.Add(await importedData);
             await _tabledata.Add(ec, success);
         }

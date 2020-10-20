@@ -33,9 +33,9 @@ namespace Atea.Tasks
 
             var query = new TableQuery<TableData>().Where(filterBySelectedDates);
 
-            var result = logTable.ExecuteQuerySegmentedAsync(query, null);
+            var result = await logTable.ExecuteQuerySegmentedAsync(query, null);
 
-            logList.AddRange(result.Result);
+            logList.AddRange(result);
 
             return (!logList.Any()) ? null : logList;
         }

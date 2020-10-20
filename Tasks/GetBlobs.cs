@@ -16,7 +16,7 @@ namespace Atea.Models
             var container = serviceClient.GetContainerReference("imported-data");
             var blob = container.GetBlockBlobReference(name);
 
-            string contents = blob.DownloadTextAsync().Result;
+            string  contents = await blob.DownloadTextAsync();
 
             return !contents.Any()? null :contents;
         }
