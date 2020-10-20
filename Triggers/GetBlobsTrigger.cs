@@ -1,7 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using Atea.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.Documents.SystemFunctions;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 
@@ -29,9 +31,9 @@ namespace Atea
                 return new BadRequestObjectResult(
                     "Please enter a valid search request format\n" + "YYYY-MM-DD-HH-MM .");
 
-            var search =_get.GetBlob(date);
+            var search = await _get.GetBlob(date);
 
-            if (!search.IsCompletedSuccessfully)
+            if (search == null)
                 return new BadRequestObjectResult(
                     "Selected entry does not exist.");
 

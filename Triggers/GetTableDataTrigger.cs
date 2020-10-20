@@ -34,10 +34,11 @@ namespace Atea
             var from = date.Substring(0,16);
             var to = date.Substring(17);
 
-            var search = _select.TableData(from, to);
+            var search = await _select.TableData(from, to);
 
-            if (search.Result == null)
+            if (search  == null)
                 return new BadRequestObjectResult("No data found.");
+
             return new OkObjectResult(search);
         }
     }
