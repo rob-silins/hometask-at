@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atea", "Atea.csproj", "{DFC6EF5A-AE6B-40D4-816B-5E2CAADE0342}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C13D35F-4D15-4537-92EC-E6663667FDFB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFC6EF5A-AE6B-40D4-816B-5E2CAADE0342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC6EF5A-AE6B-40D4-816B-5E2CAADE0342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC6EF5A-AE6B-40D4-816B-5E2CAADE0342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC6EF5A-AE6B-40D4-816B-5E2CAADE0342}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A01E0CBE-E732-45F7-A830-097B61260AB8}
+	EndGlobalSection
+EndGlobal
