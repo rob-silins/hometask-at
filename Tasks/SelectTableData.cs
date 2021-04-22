@@ -29,8 +29,7 @@ namespace Atea.Tasks
 
             if (startRange > endRange) return null;
             
-            var filterBySelectedDates = _components.FilteredDates(startRange, endRange);
-
+            var filterBySelectedDates = $"RowKey ge '{startRange}' and RowKey le '{endRange}'";
             var query = new TableQuery<TableData>().Where(filterBySelectedDates);
 
             var result = await logTable.ExecuteQuerySegmentedAsync(query, null);

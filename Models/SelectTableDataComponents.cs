@@ -16,18 +16,5 @@ namespace Atea.Models
             }
             return newDate;
         }
-
-        public string FilteredDates(DateTime? startRange , DateTime? endRange)
-        {
-            var filterBySelectedDates =
-            TableQuery.CombineFilters(
-                TableQuery.GenerateFilterCondition(
-                    nameof(RowKey), QueryComparisons.GreaterThanOrEqual, startRange.ToString()),
-                TableOperators.And,
-                TableQuery.GenerateFilterCondition(
-                    nameof(RowKey), QueryComparisons.LessThanOrEqual, endRange.ToString()));
-
-            return filterBySelectedDates;
-        }
     }
 }
