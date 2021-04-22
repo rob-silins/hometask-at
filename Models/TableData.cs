@@ -5,7 +5,6 @@ namespace Atea.Models
     public class TableData : TableEntity
     {
         public bool Success { get; set; }
-        public string Id { get; set; }
 
         public TableData(string partitionKey, string rowKey)
         {
