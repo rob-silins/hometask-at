@@ -19,12 +19,12 @@ namespace Atea
 
         [FunctionName("FetchData")]
 
-        public async Task RunTimer([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer, ExecutionContext ec)
+        public async Task RunTimer([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer)
         {
             var importedData = _connection.DataImport();
             var success = importedData != null;
             await _blobs.Add(await importedData);
-            await _tabledata.Add(ec, success);
+            await _tabledata.Add(success);
         }
     }
 }
